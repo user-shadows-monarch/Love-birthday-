@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>A Journey to You ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- ========================= -->
+    <!-- PAGE 1 — OPENING -->
+    <!-- ========================= -->
+
+    <section class="page page1 active" id="page1">
+
+        <div class="stars"></div>
+        <div class="city-glow"></div>
+
+        <div class="intro">
+
+            <div class="small-line">
+                14 • 02 • A day for love
+            </div>
+
+            <h1>
+                A special journey
+                <br>
+                <span>
+                    for someone even more special...
+                </span>
+            </h1>
+
+            <div class="heart-wrap">
+
+                <div class="heart">
+                    ♥
+                </div>
+
+                <div class="heart-ring"></div>
+
+            </div>
+
+            <p class="intro-text">
+                It's not just a birthday.
+                <br>
+                It's also Valentine's Day.
+                <br>
+                <strong>
+                    Two reasons to celebrate you.
+                </strong>
+            </p>
+
+            <button
+                class="begin-btn"
+                onclick="goToPage(2)"
+            >
+                <span>Tap to begin</span>
+                <b>♡</b>
+            </button>
+
+        </div>
+
+        <div class="bottom-label">
+            BERLIN 🇩🇪 &nbsp; → &nbsp; GABÈS 🇹🇳
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- PAGE 2 — LETTER -->
+    <!-- ========================= -->
+
+    <section class="page page2" id="page2">
+
+        <div class="rose rose1">
+            🌹
+        </div>
+
+        <div class="rose rose2">
+            🌹
+        </div>
+
+        <div class="candle">
+            🕯️
+        </div>
+
+
+        <div class="letter-scene">
+
+            <div class="letter-title">
+                A letter for you...
+            </div>
+
+
+            <button
+                class="envelope"
+                onclick="openLetter()"
+                aria-label="Open letter"
+            >
+
+                <div class="flap"></div>
+
+                <div class="seal">
+                    ♥
+                </div>
+
+                <div class="letter-text">
+
+                    Tap the envelope
+                    <br>
+
+                    <span>
+                        to open it
+                    </span>
+
+                </div>
+
+            </button>
+
+
+            <p class="hint">
+                There is something waiting inside...
+            </p>
+
+        </div>
+
+
+        <!-- MESSAGE THAT APPEARS AFTER OPENING -->
+
+        <div
+            class="letter-message"
+            id="letterMessage"
+        >
+
+            <div class="message-card">
+
+                <div class="mini-heart">
+                    ♥
+                </div>
+
+
+                <p id="spokenText">
+
+                    Before this journey begins,
+                    I want you to know one thing...
+
+                    every memory waiting for you here
+                    means something to me.
+
+                </p>
+
+
+                <button
+                    class="voice-btn"
+                    onclick="speakMessage()"
+                >
+                    🔊 Read it to me
+                </button>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="goToPage(3)"
+                >
+                    Continue the journey →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="back-btn"
+            onclick="goToPage(1)"
+        >
+            ←
+        </button>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- TEMPORARY PAGE 3 -->
+    <!-- ========================= -->
+
+    <section class="page page3" id="page3">
+
+        <div class="future-page">
+
+            <div>
+                🗺️
+            </div>
+
+            <h1>
+                Berlin → Gabès
+            </h1>
+
+            <p>
+                The journey begins here...
+            </p>
+
+            <button
+                onclick="goToPage(1)"
+                class="continue-btn"
+            >
+                Back to beginning
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
